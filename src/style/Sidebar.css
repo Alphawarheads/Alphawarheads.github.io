@@ -1,0 +1,32 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 25%;
+  transition: width 0.3s ease;
+}
+
+.sidebar.closed {
+  width: 50px;
+  overflow: hidden;
+}
+
+.sidebar-toggle {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem; /* 添加这一行以确保字体大小不会被改变 */
+  width: 40px; /* 固定宽度 */
+  height: 40px; /* 固定高度 */
+}
+
+
+.sidebar.open {
+  width: 25%;
+}
+
+.panel-info {
+  background-color: #252539;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

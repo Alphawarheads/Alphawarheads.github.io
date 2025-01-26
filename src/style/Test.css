@@ -1,0 +1,66 @@
+/* Test.css */
+.test-container {
+  padding: 20px;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.test-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.coordinate-inputs,
+.time-controls {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.coordinate-input,
+.time-input,
+.time-interval-select {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.time-range-slider {
+  margin-left: 10px;
+  width: 150px;
+}
+
+.fetch-button {
+  padding: 10px 20px;
+  background-color: #4285F4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fetch-button:hover {
+  background-color: #3367D6;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+.chart-box {
+  margin-bottom: 20px;
+  padding: 15px;
+}

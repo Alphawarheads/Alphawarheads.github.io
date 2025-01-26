@@ -1,0 +1,177 @@
+.solar-trade-container {
+  display: flex;
+  height: 100%;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Left Panel Styling */
+.left-panel {
+  width: 40%;
+  background: linear-gradient(135deg, #1a1a2e, #2b2b4f);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid #444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+  align-self: flex-start;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ff4e4e;
+}
+
+.panel-selection-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.panel-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.panel-selection select {
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  border: 1px solid #777;
+  width: 100%;
+  max-width: 250px;
+  font-size: 1rem;
+}
+
+.add-panel-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-panel-button:hover {
+  background-color: #45a049;
+}
+
+/* Panel Summary Styling */
+.panel-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.panel-summary-card {
+  background-color: #181918;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+}
+
+.panel-summary-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.panel-info {
+  margin-bottom: 10px;
+}
+
+.close-icon {
+  margin-top: auto;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-icon:hover {
+  color: #ff4e4e;
+}
+
+/* Right Panel Styling */
+.right-panel {
+  width: 60%;
+  padding: 20px;
+  background: linear-gradient(135deg, #2b2b4f, #1a1a2e);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chart-statistics {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.line-charts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chart-type-select {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+  width: 100%;
+  max-width: 200px;
+  font-size: 0.9rem;
+}
+
+.comparison-chart {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Chart Titles */
+.chart-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
