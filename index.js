@@ -9,6 +9,6 @@ root.render(
   <React.StrictMode>
     <TransactionsProvider>
     <App />
-  </TransactionsProvider>, {/* 渲染App组件 */}
+  </TransactionsProvider>
   </React.StrictMode>
 );
