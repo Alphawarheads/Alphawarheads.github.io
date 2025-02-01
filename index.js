@@ -6,9 +6,9 @@ import {TransactionsProvider} from "./src/context/TransactionContext";  // 导�
 
 const root = ReactDOM.createRoot(document.getElementById('root'));  // 获取根元素
 root.render(
-  <React.StrictMode>
+
     <TransactionsProvider>
     <App />
   </TransactionsProvider>
-  </React.StrictMode>
+
 );

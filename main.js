@@ -1,31 +1,14 @@
-const { app, BrowserWindow } = require('electron');
-export default new Router({
- mode: 'hash', //这里history修改为hash
- scrollBehavior: () => ({y: 0}),
-  routes: constantRouterMap,
-})
-function createWindow() {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    webPreferences: {
-      nodeIntegration: true,
-    },
-  });
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './src/index.css';  // 导入全局CSS
+import App from './src/App';
+import {TransactionsProvider} from "./src/context/TransactionContext";  // 导入App组件
 
-  win.loadFile('index.html'); // 加载你的React应用的入口文件
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));  // 获取根元素
+root.render(
 
-app.whenReady().then(createWindow);
+    <TransactionsProvider>
+    <App />
+  </TransactionsProvider>
 
-app.on(==='window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
-});
-
-app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) {
-    createWindow();
-  }
-});
+);
